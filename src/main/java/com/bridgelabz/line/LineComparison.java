@@ -24,9 +24,11 @@ public class LineComparison {
         System.out.println("Length of the first Line1 is : " + len1 + " units" );
         System.out.println("Length of the second Line2 is : " + len2 + " units" );
         System.out.println();
-        if (len1.equals(len2))
-            System.out.println("Both Lines are EQUAL ");
+        if(len1.compareTo(len2) == 1)
+            System.out.println("Length of Line 1 is GREATER than Line 2 ");
+        else if (len1.compareTo(len2) == -1)
+            System.out.println("Length of Line 1 is LESS than Line 2 ");
         else
-            System.out.println("NOT EQUAL lines");
+            System.out.println("Both lines are EQUAL in length");
     }
 }
